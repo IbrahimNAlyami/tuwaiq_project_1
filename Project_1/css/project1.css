@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #FEE440 !important;
+}
+/* buttom style of top container */
+#buttom-of-top {
+    position: relative;
+    left: 1200px;
+    background: #FEE440;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 10;
+    padding: 10px;
+    text-shadow: 1px 1px 20px white;
+    text-align: center;
+ }
+ 
+ #buttom-of-top:hover {
+    border: solid black ;
+    background: white;
+    -webkit-border-radius: 78px;
+    -moz-border-radius: 78px;
+    border-radius: 50px;
+ }
+
+ .container{
+     margin: 70px 100px 70px 100px;
+ }
+ hr{
+    border: double #FEE440 10px;
+    border-bottom: none;
+    width: 100%;
+    margin: 50px auto;
+  }
+  .bottom-container{
+    background-color: #FEE440;
+    padding: 50px 0 25px;
+    text-align: center;
+  }
