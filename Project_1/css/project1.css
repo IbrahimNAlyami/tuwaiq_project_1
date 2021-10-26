@@ -23,6 +23,7 @@ hr {
   border: double #fee440 10px;
   border-bottom: none;
   width: 100%;
+  margin-top: 35px;
 }
 .bottom-container {
   background-color: #fee440;
@@ -66,20 +67,25 @@ hr {
   margin-right: auto;
   text-align: center;
 }
-.homePage{
-
-}
 #videosPage{
-  display: none;
+  display:none;
 }
 #path-button{
   font-family: Arial, Helvetica, sans-serif;
   color:black;
 }
-.login-page{
-  display: none;
-}
-
 .home-img{
   height: 45px; 
+}
+#login-page{
+  display: none;
+}
+#signup{
+  display: none;
+}
+.signin-signub-btn{
+  border-color: black;
+}
+.form-text{
+  margin-bottom: 10px;
 }
