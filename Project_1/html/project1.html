@@ -15,11 +15,10 @@
 </head>
 
 <body>
-    <!--top container-->
+    <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <button id="buttom-of-top">register for free</button>
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#what-you'll-learn">What you'll learn</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,30 +26,34 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">About course </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Path of course</a>
                     </li>
-                    <li>
-                    </li>
+                    <li class="nav-item">
+<!--####-->        <a href="../html/project1.html"> <img  class="home-img center" src="../images/home.png" alt="" ></a>
+                </li>
                 </ul>
             </div>
+            <button id="login" type="button" class="btn btn-light">Login</button>
         </div>
     </nav>
+    
 
     <!-- #Home Page -->
-    <div class="homePage" style="display: none;">
+    <!--#######################-->
+    <div id="homePage">
         <!-- what you'll learn in JavaScript session in the top container -->
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GM6dQBmc-Xg"
+                <div class="col-12 col-md-6">
+                    <iframe id="what-you'll-learn" src="https://www.youtube-nocookie.com/embed/GM6dQBmc-Xg"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <h3 style="margin-bottom: 50px;"><b>What you'll learn in JavaScript </b></h3>
                     <p> JavaScript is among the most powerful and flexible programming languages of the web. It powers
                         the
@@ -63,11 +66,14 @@
             </div>
         </div>
         <hr>
+        </div>
+        
 
         <!-- about course middle-container -->
+        <div id="about-course">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <h3 style="margin-bottom: 50px;"> <b> About course </b></h3>
                     <p>you will be able yo learn JavaScript In only (13 Days)
                         by taking every day a course till you fnish at day 13
@@ -76,49 +82,27 @@
                         Infrastructure depends on infrastructure, on building
                         real projects. In addition to the basics, you will learn  how to truly rely on JavaScrip</p>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6" style="text-align: center;">
                     <img src="../images/jsLogo.png" style="height: 250px; width: 250px; margin-left: 100px;" alt="">
                 </div>
             </div>
         </div>
-        <hr>
+    </div>
+
+        <!-- end -->
 
         <!-- course paths -->
-        <div class="container">
+        <div id="course-path">
+        <div class="container" style="margin-bottom: 70px;">
             <div class="row">
-                <div class="col-4">
-                    <!-- first card  -->
-                    <div class="card">
-                        <img src="../images/javascript.png" class="card-img-top" alt="...">
+                <div class="col">
+                    <div class="card course-card">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- second card  -->
-                    <div class="card">
-                        <img src="../images/javascript.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <!-- third card  -->
-                    <div class="card">
-                        <img src="../images/javascript.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title center">Card title</h5>
+                            <p class="card-text center">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                                <button id="path-button" type="button" class="btn btn-light center"> <b>Go to the course</b></button>
                         </div>
                     </div>
                 </div>
@@ -126,174 +110,242 @@
         </div>
     </div>
 
+    <!--end-->
+
     <!-- #Vedios Page -->
-    <div class="vediosPage">
+     <!--##################################-->
+    <div id="videosPage">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- lists of videos -->
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <div class="row">
-                                <div class="col-4">
-                                    <iframe width="180" height="100"
-                                        src="https://www.youtube-nocookie.com/embed/WaMYDuohE1A"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-8">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">List group item heading</h5>
-                                        <!-- <small>3 days ago</small> -->
-                                    </div>
-                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                    <small>And some small print.</small>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- end of lists -->
-                    </div>
-                    <ul>
-                        <li>
-                        </li>
-                        <li>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NgLgguhL2to"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen onclick="playVideo('https://www.youtube-nocookie.com/embed/NgLgguhL2to')"> </iframe>
-                        </li>
-                        <li>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8ADaKFTeB3M"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </li>
-                        <li>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gyWwPypW4OU"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </li>
-                        <li>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gyWwPypW4OU"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <iframe id="" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MAauLwSHO6Y"
+                <div class="col-12 col-md-8">
+                    <!--orginal video playing-->
+                    <iframe width="70%" height="350" src="https://www.youtube.com/embed/kdqhkfDPlXA"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+                <div class="col">
+                    <!-- lists of videos -->
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <!-- list 1 -->
+                                    <iframe class="center" width="100" height="130"
+                                        src="https://www.youtube.com/embed/S-MGBBtI-48" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12 " style="text-align: center;">
+
+                                    <div>
+                                        <h5 class="mb-1">List group item heading</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 2-->
+                                    <iframe class="center" height="100" width="130"
+                                        src="https://www.youtube.com/embed/vPwQKAZryP8"
+                                        src="https://www.youtube.com/embed/2pz2JlJUDMg" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12" >
+                                    <div>
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 3-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/2pz2JlJUDMg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 4-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/hQWcdh2GdEU"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 5-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/DZTgVQhgJYM"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 6-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/acWPO_iQ--c"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 7-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/cFjj7wW6wro"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 8-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/LYCGqVF5nFA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 9-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/gqDT45XqWq4"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!--list 10-->
+                                    <iframe class="center" height="100" width="130" src="https://www.youtube.com/embed/ciNxZcOJ55k"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 center">List group item heading</h5>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- end of lists -->
 
+
+    <!--login-->
+    <div class="login-page">
+    <div id="login">
+    <div style="margin-top: 200px; margin-bottom: 150px;" class="container ">
+        <div class="row">
+          <div class="col-12" style="margin-left: 300px;">
+            <form>
+                <div class="mb-3 ">
+                  <label  for="exampleInputEmail1" class="form-label" id="email">Email address</label>
+                  <input style="width: 50%;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div id="password">
+                <div class="mb-3">
+                  <label id="passwordd" for="exampleInputPassword1" class="form-label ">Password</label>
+                  <input style="width: 50%;" type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                </div>
+                <button id="signin" type="button" class="btn btn-light">signin</button>            
+              </form>
+          </div>
+          </div>
+    </div>
+</div>
+</div>
+<!--end of login-->
+
+   
     <!-- footer -->
-    <div class="bottom-container fixed-bottom">
+    <div class="bottom-container">
         <a class="linkedin-link" href="https://www.linkedin.com/in/ibrahim-alyami-0a71a31a7/">LinkedIn | </a>
         <a class="twitter-link" href="https://twitter.com/">Twitter</a>
         <p class="m2021">© 2021 Ibrahim Alyami.</p>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/project1.js"></script>
 </body>
 
 </html>
+
