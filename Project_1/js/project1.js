@@ -74,10 +74,10 @@ $('#signup-btn').click(function () {
             new_users.push(signup_users)
             localStorage.setItem('Data', JSON.stringify(new_users));
         }
-        $('#login-page').css("display","block");
+        $('#login-page').show();
 
     } else {
-        $('#login-form2').css("display","block");
+        $('#login-form2').show();
     }
 });
 /* ## end of local storage signup ##*/
@@ -99,11 +99,9 @@ $('#signin').click(function () {
                         $("#homePage").show();
                         $("#course-path").hide();
                         $("#videosPage").show();
-                        $("#email_login_input").val("");
-                        $("#password_login_input").val("");
-                        $("#login-form1").css("display", "block");
+                        $("#signup").hide();
                     } else {
-                        $('#login-form2').css("display", "block");
+                        $('#login-form2').show();
                     }
                 });
             }
@@ -248,6 +246,7 @@ $('#signin').click(function () {
                 $("#fr10").hide();
                 $("#play-video").hide();
             });
+
             // video 10
             $("#vid10").click(function () {
                 $("#tv").append('<iframe id="fr10" class="center" height="500" width="100%"src="https://www.youtube.com/embed/ciNxZcOJ55k" title="YouTube video player"frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>');
@@ -263,3 +262,4 @@ $('#signin').click(function () {
                 $("#fr9").hide();
                 $("#play-video").hide();
             });
+            // ## end of list videos ## 
