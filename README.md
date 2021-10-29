@@ -6,10 +6,6 @@ JavaScript contains a standard library of objects, such as Array, Date and Math,
 Therefore, the project provides for the creation of an educational platform that contains clips to learn the JavaScript language.
 
 # purpose of the project
-- The goal of this educational site is to 
-be a guide for students to learn the 
-JavaScript language with clips in the 
-Arabic language it will be a 
-useful site for learners and be a 
-guide for them to learn the 
-JavaScript language
+-  it will be a useful site for learners and be a guide for them to learn the JavaScript language
+-  The goal of the project is to teach everyone who has the desire to learn the JavaScript language gradually, from beginner to advanced -  it will be a useful site for learners and be a guide for them to learn the JavaScript language
+
