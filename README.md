@@ -1,4 +1,4 @@
-                       ![tuwaiq-logo](https://user-images.githubusercontent.com/92294013/139496216-c446f021-63ca-44e2-b5e6-97623677626f.jpg)
+![tuwaiq-logo](https://user-images.githubusercontent.com/92294013/139496216-c446f021-63ca-44e2-b5e6-97623677626f.jpg)
 # Introduction 
 - JavaScript is a lightweight, cross-platform, interpreted scripting language.
 It is famous for developing web pages, and it is also used by many non-browsed environments.
