@@ -21,3 +21,4 @@ Therefore, the project provides for the creation of an educational platform that
 - JQuery.
 - Local storage to persist the users data login & signup.
 - Dynamic website.
+- Multiple pages displayed on a single page
